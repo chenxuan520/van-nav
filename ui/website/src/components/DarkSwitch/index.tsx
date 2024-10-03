@@ -29,8 +29,8 @@ const DarkSwitch = ({ showGithub }: { showGithub: boolean }) => {
     if (!current.hasInit) {
       current.hasInit = true;
       if (!!!localStorage.getItem("theme")) {
-        // 第一次用默认的
-        setTheme("auto");
+        // 第一次默认暗色系的
+        setTheme("dark");
       } else {
         const iTheme = initTheme();
         setTheme(iTheme);
